@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlueDot Labs — The Virtual Lab for R&D</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-dot"></span>
+        <span>BlueDot Labs</span>
+      </div>
+      <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <h1>
+        Iterate at the<br>
+        <span class="gradient-text">speed of curiosity.</span>
+      </h1>
+      <p class="hero-sub">
+        Accelerate your R&D with AI-driven experiment simulations.
+        Don't just discover new materials — know exactly how to make them.
+      </p>
+      <div class="hero-actions">
+        <a href="#waitlist" class="btn-primary">Join the Waitlist</a>
+        <a href="#how-it-works" class="btn-ghost">See How It Works</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="problem" id="problem">
+    <div class="container">
+      <h2 class="section-label">The Problem</h2>
+      <p class="section-title">The R&D Bottleneck</p>
+      <p class="section-desc">For researchers, physical experimentation is a daily struggle.</p>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3a8eed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3>Wasted Time & Resources</h3>
+          <p>Running physical experiments takes far too much time and is constantly bottlenecked by limited experimental equipment.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3a8eed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 20V10"/>
+              <path d="M12 20V4"/>
+              <path d="M6 20v-6"/>
+            </svg>
+          </div>
+          <h3>The Synthesis Gap</h3>
+          <p>Currently, the industry focus is heavily on using AI to explore and discover new materials. However, the real pain is figuring out the actual method to synthesize those discoveries in the real world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="solution" id="solution">
+    <div class="container">
+      <h2 class="section-label">What We Do</h2>
+      <p class="section-title">The King of Synthesis</p>
+      <p class="section-desc">
+        We are building a simple, easy-to-use virtual lab that acts as an algorithmic pipeline.
+        Our goal is to become the ultimate king of synthesis — moving beyond mere discovery.
+      </p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3a8eed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3>Agentic AI</h3>
+          <p>We utilize Agentic AI to draft mathematical theories and run precise experiment simulations.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3a8eed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+          </div>
+          <h3>Exhaustive Testing</h3>
+          <p>Once a simulation is generated, our agent runs through all possible situations to guarantee the best possible outcome.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3a8eed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+              <polyline points="17 6 23 6 23 12"/>
+            </svg>
+          </div>
+          <h3>Proven MVP</h3>
+          <p>We have already built an MVP for electrodeposition simulations that successfully guided teams to their desired results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="workflow" id="how-it-works">
+    <div class="container">
+      <h2 class="section-label">Platform Workflow</h2>
+      <p class="section-title">How it transforms your research</p>
+      <div class="flowchart" id="flowchart">
+        <svg id="flowchart-svg" viewBox="0 0 1000 400" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#3a8eed"/>
+            </marker>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+              <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+            <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#3a8eed;stop-opacity:0.15"/>
+              <stop offset="100%" style="stop-color:#3a8eed;stop-opacity:0.05"/>
+            </linearGradient>
+          </defs>
+
+          <line class="flow-line" x1="210" y1="170" x2="300" y2="170" stroke="#3a8eed" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+          <line class="flow-line" x1="440" y1="170" x2="530" y2="170" stroke="#3a8eed" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+          <line class="flow-line" x1="670" y1="170" x2="760" y2="170" stroke="#3a8eed" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+          <path class="flow-line flow-loop" d="M 830 250 Q 830 340 500 340 Q 170 340 170 250" stroke="#3a8eed" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+
+          <text x="500" y="365" fill="#a8aab2" font-size="14" text-anchor="middle" font-family="Inter, sans-serif" font-weight="500">iterate</text>
+
+          <g class="flow-node" transform="translate(140, 170)">
+            <rect x="-70" y="-50" width="140" height="100" rx="12" fill="url(#nodeGrad)" stroke="#3a8eed" stroke-width="1.5"/>
+            <text y="-12" fill="#3a8eed" font-size="22" text-anchor="middle" font-family="Inter, sans-serif">01</text>
+            <text y="14" fill="#ffffff" font-size="14" text-anchor="middle" font-family="Inter, sans-serif" font-weight="600">Define</text>
+            <text y="34" fill="#a8aab2" font-size="11" text-anchor="middle" font-family="Inter, sans-serif">Hypothesis & goals</text>
+          </g>
+
+          <g class="flow-node" transform="translate(370, 170)">
+            <rect x="-70" y="-50" width="140" height="100" rx="12" fill="url(#nodeGrad)" stroke="#3a8eed" stroke-width="1.5"/>
+            <text y="-12" fill="#3a8eed" font-size="22" text-anchor="middle" font-family="Inter, sans-serif">02</text>
+            <text y="14" fill="#ffffff" font-size="14" text-anchor="middle" font-family="Inter, sans-serif" font-weight="600">Simulate</text>
+            <text y="34" fill="#a8aab2" font-size="11" text-anchor="middle" font-family="Inter, sans-serif">AI runs experiments</text>
+          </g>
+
+          <g class="flow-node" transform="translate(600, 170)">
+            <rect x="-70" y="-50" width="140" height="100" rx="12" fill="url(#nodeGrad)" stroke="#3a8eed" stroke-width="1.5"/>
+            <text y="-12" fill="#3a8eed" font-size="22" text-anchor="middle" font-family="Inter, sans-serif">03</text>
+            <text y="14" fill="#ffffff" font-size="14" text-anchor="middle" font-family="Inter, sans-serif" font-weight="600">Optimize</text>
+            <text y="34" fill="#a8aab2" font-size="11" text-anchor="middle" font-family="Inter, sans-serif">Exhaustive testing</text>
+          </g>
+
+          <g class="flow-node" transform="translate(830, 170)">
+            <rect x="-70" y="-50" width="140" height="100" rx="12" fill="url(#nodeGrad)" stroke="#3a8eed" stroke-width="1.5"/>
+            <text y="-12" fill="#3a8eed" font-size="22" text-anchor="middle" font-family="Inter, sans-serif">04</text>
+            <text y="14" fill="#ffffff" font-size="14" text-anchor="middle" font-family="Inter, sans-serif" font-weight="600">Synthesize</text>
+            <text y="34" fill="#a8aab2" font-size="11" text-anchor="middle" font-family="Inter, sans-serif">Proven methodology</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why-content">
+        <h2 class="section-label">Why Join Us</h2>
+        <p class="section-title">A completely new approach to R&D.</p>
+        <div class="why-text">
+          <p>Whether you are trying to synthesize materials discovered via AI or looking for a tool to help with daily research proposals, simulation is the answer. Instead of designing physical experiments from scratch, you can use our platform to reach a final conclusion much sooner.</p>
+          <p>We are scaling this technology to solve all R&D problems. This is a completely new approach, and we are confident it will change the way we do R&D forever.</p>
+        </div>
+        <a href="#waitlist" class="btn-primary">Secure Your Spot on the Waitlist</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="waitlist" id="waitlist">
+    <div class="container">
+      <div class="waitlist-card">
+        <h2>Get early access.</h2>
+        <p>
+          Join the waitlist for the virtual lab that predicts the perfect synthesis methods,
+          compositions, and methodologies — before you ever touch physical equipment.
+        </p>
+        <form id="waitlist-form" class="waitlist-form">
+          <input type="email" id="email-input" placeholder="you@university.edu" required>
+          <button type="submit" class="btn-primary">Join Waitlist</button>
+        </form>
+        <div id="form-success" class="form-success" style="display:none;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3a8eed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          <span>You're on the list. We'll be in touch soon.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="toast-overlay" class="toast-overlay" style="display:none;">
+    <div class="toast">
+      <div class="toast-icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#3a8eed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+          <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+      </div>
+      <h3>You're in.</h3>
+      <p id="toast-email">We'll reach out when it's your turn.</p>
+      <button class="toast-close" id="toast-close">Got it</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="logo">
+          <span class="logo-dot"></span>
+          <span>BlueDot Labs</span>
+        </div>
+        <p class="footer-copy">&copy; 2026 BlueDot Labs. Built for the curious.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
